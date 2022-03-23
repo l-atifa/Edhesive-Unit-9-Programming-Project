@@ -8,6 +8,12 @@ public class Women extends Clothing
     extendedSize = "tall";
   }
 
+  public Women(double p, String c, String n, int q, String b, String s, String exS)
+  {
+    super(p, c, n, q, b, s);
+    extendedSize = exS;
+  }
+
   public String getExtendedSize()
   {
     return extendedSize;
@@ -17,4 +23,9 @@ public class Women extends Clothing
   {
     extendedSize = es;
   }
+
+  /*public String toString()
+  {
+    
+  }*/
 }

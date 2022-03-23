@@ -8,6 +8,12 @@ public class Men extends Clothing
     hasButtons = true;
   }
 
+  public Men(double p, String c, String n, int q, String b, String s, boolean hB)
+  {
+    super(p, c, n, q, b, s);
+    hasButtons = hB;
+  }
+
   public boolean getHasButtons()
   {
     return hasButtons;
@@ -17,4 +23,9 @@ public class Men extends Clothing
   {
     hasButtons = i;
   }
+
+  /*public String toString()
+  {
+    
+  }*/
 }

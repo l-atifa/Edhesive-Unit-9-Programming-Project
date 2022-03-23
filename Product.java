@@ -7,7 +7,17 @@ public class Product
 
   public Product()
   {
-    this(32.0, "Samsung", "Wireless Mouse", 2);
+    price = 1.99;
+    company = "Crayola";
+    name = "Colored Pencils";
+    quantity = 2;
+  }
+  public Product(double p, String c, String n, int q)
+  {
+    price = p;
+    company = c;
+    name = n;
+    quantity = q;
   }
 
   public double getPrice()
@@ -52,7 +62,9 @@ public class Product
   
   public String toString()
   {
-    String rv = quantity;
+    String rv = this.getCompany() + " " + this.getName() + "\n";
+    rv += "Item price: $" + this.getPrice();
+    rv += "\n Quantity: " + this.getQuantity();
     return rv;
   }
 

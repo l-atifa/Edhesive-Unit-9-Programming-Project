@@ -5,9 +5,16 @@ public class Electronics extends Product
 
   public Electronics()
   {
-    super();
-    color = "black";
-    batteryIncluded = true;
+    super(49.99, "Polaroid", "Waterproof Digital Camera", 1);
+    color = "Teal";
+    batteryIncluded = false;
+  }
+
+  public Electronics(double p, String c, String n, int q, String col, boolean bI)
+  {
+    super(p, c, n, q);
+    color = col;
+    batteryIncluded = bI;
   }
 
   public String getColor()
@@ -29,4 +36,9 @@ public class Electronics extends Product
   {
     batteryIncluded = b;
   }
+
+  /*public String toString()
+  {
+    
+  }*/
 }
