@@ -24,8 +24,8 @@ public class Women extends Clothing
     extendedSize = es;
   }
 
-  /*public String toString()
+  public String toString()
   {
-    
-  }*/
+    return super.toString() + " and style " + this.getExtendedSize() + ".";
+  }
 }

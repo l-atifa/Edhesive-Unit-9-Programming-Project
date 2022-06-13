@@ -62,9 +62,7 @@ public class Product
   
   public String toString()
   {
-    String rv = this.getCompany() + " " + this.getName() + "\n";
-    rv += "Item price: $" + this.getPrice();
-    rv += "\n Quantity: " + this.getQuantity();
+    String rv = this.getQuantity() + " " + this.getCompany() + " " + this.getName() + " for $" + this.getPrice() + " each";
     return rv;
   }
 

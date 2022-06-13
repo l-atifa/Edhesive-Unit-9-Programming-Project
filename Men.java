@@ -24,8 +24,8 @@ public class Men extends Clothing
     hasButtons = i;
   }
 
-  /*public String toString()
+  public String toString()
   {
-    
-  }*/
+    return super.toString() + ". Has buttons: " + this.getHasButtons() + ".";
+  }
 }

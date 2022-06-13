@@ -37,9 +37,9 @@ public class Clothing extends Product
     size = s;
   }
 
-  /*public String toString()
+  public String toString()
   {
-    
-  }*/
+    return super.toString() + " from " + this.getBrand() + " in a size " + this.getSize(); 
+  }
   
 }

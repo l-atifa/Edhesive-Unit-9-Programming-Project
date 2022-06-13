@@ -37,8 +37,8 @@ public class Electronics extends Product
     batteryIncluded = b;
   }
 
-  /*public String toString()
+  public String toString()
   {
-    
-  }*/
+    return super.toString() + " in the color " + this.getColor() + ". Battery included: " + this.getBatteryIncluded() + ".";
+  }
 }

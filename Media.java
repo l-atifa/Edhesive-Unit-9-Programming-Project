@@ -4,8 +4,8 @@ public class Media extends Product
 
   public Media()
   {
-    super(9.99, "Shueisha", "Demon Slayer Volume 18", 1);
-    type = "Manga";
+    super(9.99, "Shueisha", "Demon Slayer Vol. 18", 1);
+    type = "manga";
   }
 
   public Media(double p, String c, String n, int q, String t)
@@ -24,8 +24,9 @@ public class Media extends Product
     type = t;
   }
 
-  /*public String toString()
+  public String toString()
   {
-    
-  }*/
+    return super.toString() + ". This is a " + this.getType() + ".";
+  }
+  
 }
